@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+  color:gold;
+} 
+.App{
+  background-color: #14161a;
+  color: white;
+  min-height: 100vh;
+}
+.Header{
+  /* padding: 30px; */
+  /* position: sticky;
+  top:0; */
+  height: 60px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.221);
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 26px;
+  background-color: #14161a;
+
+}
+.Header .title{
+  margin-left: 50px;
+  
+  color: gold;
+  /* flex: 1; */ /* kaam gadbad kar rha tha */
+  font-weight: bold;
+  cursor: pointer;
+}
+.Header select{
+  /* outline: 0; */
+  
+
+  background-color: #14161a;
+  border:1px solid white;
+  width: 80px;
+  font-size: 16px;
+  /* height: 60px; */
+  color:white;
+  /* margin-right: 50px; */
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 50px;
+  outline: none;
+}
+
+.HomePage .banner{
+background-image: url(../public/banner.jpg);
+}
+.HomePage .banner .banner-content{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */ /* koi kaam nhi iska */
+  justify-content:space-around; /* important */
+  /* padding-top: 10px; */
+
+}
+.HomePage .banner .banner-content .tagline{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 40%;
+justify-content:space-evenly;
+/* justify-content: center; koi kamm nhi iska */
+}
+
+.carousel-items,.carousel-text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+}
+.coins-table-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* justify-content: space-between; */
+}
+.coins-table-container .search-bar{
+  background-color: #14161a;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 90vw;
+  padding: 15px;
+  font-size: 16px;
+  margin: 30px 0;
+  outline:none;
+}
+.coins-table-container .coins-table-data{
+  /* width: 90vw; */
+  all:unset;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.05), -5px 5px 10px 0px rgba(0, 0, 0, 0.05), 5px 0px 10px 0px rgba(0, 0, 0, 0.05),-5px 0px 10px 0px rgba(0, 0, 0, 0.05);
+
+}
+.coins-table-container .coins-table-data thead th{
+  background-color: #EEBC1D;
+  color: black;
+  font-size: 20px;
+  /* height: 50px; */
+  padding:15px;
+}
+.coins-table-container .coins-table-data tbody tr:hover{
+  background-color: rgba(59, 59, 59, 0.279);
+  cursor:pointer;
+}
+.coinpage-container {
+  display: flex;
+  /* width: 100vw; */
+
+}
+.coinpage-container .sidebar{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 0px; */
+  /* margin: 30px 0 10px; */
+  padding: 10px 25px;
+  /* border-right: 1px solid green; */
+  gap: 20px;
+}
+.coinpage-container .sidebar .crypto-info .desc{
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.coinpage-container .sidebar .crypto-info .crypto-data{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  font-size: 22px;
+  list-style: none;
+}
+
+.coinpage-container .sidebar .crypto-info .crypto-data .crypto-data-list .data-heading{
+  font-weight: bold;
+}
+.coinpage-container .coin-chart-container{
+  width: 70%;
+  padding: 20px 25px;
+  /* border-left: 1px solid white; */
+}
+.coinpage-container .coin-chart-container .day-btns{
+  display: flex;
+  justify-content: space-between;
+}
+.coinpage-container .coin-chart-container .day-btns .btn{
+  background-color: #14161a;
+  color: white;
+  border: 1.5px solid gold;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  width:20%;
+  cursor: pointer;
+  outline: none;
+}
+.coinpage-container .coin-chart-container .day-btns .btn:hover{
+  background-color: gold;
+
+  border: 1.5px solid gold;
+  color: black;
+}
+.coinpage-container .coin-chart-container .day-btns .btn.selected{
+  background: gold;
+  border: 1.5px solid gold;
+  color:black
+}
